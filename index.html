@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,171 @@
     <!-- google fonts CDN  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <style>
+            .poppines-font{
+                font-family: "Poppins", serif;
+            }
+            .garamond-font{
+                font-family: "EB Garamond", serif;
+
+            }
+        </style>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'justice-primary': '#B68C5A',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
-<body>
-     
+
+<body class="poppines-font">
+    <!-- header sections start here -->
+    <header class="md:container mx-auto">
+        <!-- navbar start here -->
+        <nav class="poppines-font">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start ">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-stone-800 ">
+                            <li><a>Home</a></li>
+                            <li>
+                                <details>
+                                    <summary >Services</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+    
+                                </li>
+                                <li>
+                                    <details>
+                                    <summary>cases</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                                <li>
+                                    <details>
+                                        <summary>Blog</summary>
+                                        <ul class="p-2">
+                                            <li><a>Submenu 1</a></li>
+                                            <li><a>Submenu 2</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>Contact Us</summary>
+                                        <ul class="p-2">
+                                            <li><a>Submenu 1</a></li>
+                                            <li><a>Submenu 2</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                    <a class=" text-xl"><img src="images/logo2.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal text-stone-800  px-1">
+                        <li><a>Home</a></li>
+                       
+                        <li>
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+
+                            </li>
+                            <li>
+                                <details>
+                                <summary>cases</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                            <li>
+                                <details>
+                                    <summary>Blog</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Contact Us</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-white bg-justice-primary">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- mavbar end here -->
+         <!-- banner section start here -->
+         <div class="hero my-6 bg-base-200 min-h-96 md:min-h-[550px] bg-[url('../images/banner.png')] bg-center  bg-cover md:rounded-lg ">
+            <div class="hero-content text-center ">
+              <div class="space-y-3">
+                <h1 class="text-4xl md:text-7xl font-extrabold garamond-font text-white">We Provide Effective <br> Legal Solutions</h1>
+                <p class=" md:w-4/5 md:mx-auto md:p-4 text-stone-300 ">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <form>
+                    <input class="px-5 me-3 py-[11px] my-2 md:w-4/6  rounded-md" type="text" placeholder="Search your Services">
+                    <button class="btn bg-justice-primary text-white border-none">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+         <!-- banner section end here -->
+    </header>
+    <!-- header section end here -->
+
+    <!-- main section start here -->
+    <main>
+
+    </main>
+    <!-- main section end here -->
+
+    <!-- footer section start here -->
+    <footer>
+
+    </footer>
+    <!-- footer section end here -->
 </body>
+
 </html>
